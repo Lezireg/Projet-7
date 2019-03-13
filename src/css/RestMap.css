@@ -1,0 +1,200 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    height: 80vh;
+  }
+  
+.map-container{
+  width : 60%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.new-restaurant {
+  position : relative;
+  top: -100%;
+  height : 100%;
+  background-color: #00000099;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.form-new-restaurant {
+  position : absolute;
+  top : 40%;
+  width: 80%;
+  background-color: white;
+  border-radius: 4px;
+  padding : 30px 30px 20px 30px;
+  margin : 0px 0px 0px 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-line-add{
+  display: flex;
+  justify-content: center;
+}
+
+.blue-button {
+  text-decoration: none;
+  background-color: #0342DA;
+  color : white;
+  font-size: 1.2em;
+  padding: 3px 30px 5px 28px;
+  border : none;
+  border-radius: 20px;
+  margin-top : 10px;
+}
+.blue-button:hover {
+  background-color: #0138b8
+}
+
+.blue-button:active {
+  transform: scale(0.99)
+}
+.blue-button:focus {
+  outline : none;
+}
+
+.quit-button {
+  position: absolute;
+  top : 5px;
+  right : 5px;
+  color: #aa0000;
+  border : none;
+  font-size : 1.2em;
+  background-color: white;
+}
+
+.quit-button:hover {
+  color:red;
+}
+
+.quit-button:focus {
+  outline : none;
+}
+
+.form-new-restaurant input {
+  border : solid 1px lightgrey;
+  border-radius: 4px;
+  height: 17px;
+  margin : 0px 10px 0px 10px;
+}
+
+/* Loading animation */
+.loading-animation {
+  margin-bottom: 120px;
+}
+
+.loading {
+ font-size: 2.3em;
+ color: gray;
+ padding-top : 120px;
+}
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0342DA;
+    margin: -3px 0 0 -3px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 50px;
+    left: 50px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 54px;
+    left: 45px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 57px;
+    left: 39px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 58px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 57px;
+    left: 25px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 54px;
+    left: 19px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 50px;
+    left: 14px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 45px;
+    left: 10px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+
+    .main-content {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top : 0px;
+      margin-bottom: 0px;
+      height: auto;
+    }
+    .map-container{
+      width : 100%;
+      height: 300px;
+      border-radius: 4px;
+    }
+  }
